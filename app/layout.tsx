@@ -1,0 +1,19 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Bella Verde Ops | Management Dashboard",
+  description: "Internal operations dashboard for Bella Verde Landscaping",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className="min-h-screen bg-[#F8F9FA] dark:bg-[#1A1A2E]">{children}</body>
+    </html>
+  );
+}
